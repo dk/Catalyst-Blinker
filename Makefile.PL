@@ -7,7 +7,7 @@ WriteMakefile(
 	PREREQ_PM     => { Prima => 0, Catalyst => '5.9' },
 	META_MERGE        => {
 		resources => {
-			repository => 'https://github.com/dk/catalyst-blinker',
+			repository => 'https://github.com/dk/Catalyst-Blinker',
 		},
 	},
 );
