@@ -20,7 +20,7 @@ safe or not to operate the app.
 The thing is very primitive. While Catalyst app is loading, it blinks yellow. If
 it has loaded ok, it shows green light for a couple of seconds and disappears.
 If there was a failure (syntax failure in my case most of the time), it shows red
-light which doesn't go away until fixed.
+light which doesn't go away until the problem is fixed.
 
 Wasn't tested on anything other than ubuntu. Most probably wouldn't run on win32
 out of box, because the module expects pipes and forks to be working.
