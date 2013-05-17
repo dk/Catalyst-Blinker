@@ -29,7 +29,7 @@ out of box, because the module expects pipes and forks to be working.
 
 In your script/myapp.pl, add this, if you want blinker on by default:
 
-    require Catalyst::Blinker;
+    use Catalyst::Blinker;
     Catalyst::Blinker->start;
 
 if you want it off by default, do this instead:
@@ -38,6 +38,10 @@ if you want it off by default, do this instead:
        require Catalyst::Blinker;
        Catalyst::Blinker->start;
     }
+
+before
+
+    Catalyst::ScriptRunner->run('MyApp', 'Server');
 
 In both cases, the module recognizes $ENV{BLINKER} and parses the passed options (see below),
 f.ex.
